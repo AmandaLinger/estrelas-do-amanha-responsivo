@@ -71,6 +71,7 @@
 
                     <div class="certidao">
                         <label for="certidao-nascimento">Certidão de nascimento</label>
+
                         <div class="enviar-arquivo">
                             <input type="file" id="certidao-nascimento" accept=".pdf,.jpg,.jpeg,.png">
                             <img src="assets/icons/cloud-upload.svg" alt="Ícone de upload">
@@ -141,58 +142,103 @@
                     <h3>Opções de matrícula</h3>
                 </div>
 
-                <div class="turno">
-                    <label for="turno">Selecione o turno de estudo</label>
+                <div class="turno.container">
 
-                    <div class="turno-card">
-                        <input type="radio" name="manha">
-                        <img src="assets/icons/sun-cloud-02.svg" alt="ícone de manhã">
-                        <p class="card">Manhã</p>
+                    <label for="turno" id="label-id">Selecione o turno de estudo</label>
+                    <div class="turno-btn">
+                        <label class="turno-card">
+                            <input type="radio" name="turno" value="manha">
+                            <div class="conteudo">
+                                <div class="icone-check">
+                                    <span class="check"></span>
+                                </div>
+                                <img src="assets/icons/sun-02.svg" alt="Ícone de manhã">
+                                <p>Manhã</p>
+                            </div>
+                        </label>
+
+                        <label class="turno-card">
+                            <input type="radio" name="turno" value="tarde">
+                            <div class="conteudo">
+                                <div class="icone-check">
+                                    <span class="check"></span>
+                                </div>
+                                <img src="assets/icons/sun-cloud-02.svg" alt="Ícone de tarde">
+                                <p>Tarde</p>
+                            </div>
+                        </label>
                     </div>
 
-                    <div class="turno-card">
-                        <input type="radio" name="tarde">
-                        <img src="assets/icons/sun-02.svg" alt="ícone de tarde">
-                        <p class="card">Tarde</p>
-                    </div>
-
-                    <div class="esporte-card">
+                    <div class="esporte">
                         <label for="esporte">Em qual esporte você gostaria de inscrever seu filho?</label>
 
-                        <div class="turno-card">
-                            <input type="radio" name="futebol">
-                            <img src="assets/icons/football.svg" alt="ícone de futebol">
-                            <p class="card">Futebol</p>
-                        </div>
+                        <div class="esporte-container">
+                            <label class="esporte-card">
+                                <input type="radio" name="futebol">
+                                <div class="conteudo">
+                                    <div class="icone-check">
+                                        <span class="check"></span>
+                                    </div>
+                                    <img src="assets/icons/football.svg" alt="ícone de futebol">
+                                    <p class="card">Futebol</p>
+                                </div>
+                            </label>
 
-                        <div class="turno-card">
-                            <input type="radio" name="basquete">
-                            <img src="assets/icons/basketball-02.svg" alt="ícone de basquete">
-                            <p class="card">Basquete</p>
-                        </div>
+                            <label class="esporte-card">
+                                <input type="radio" name="futebol">
+                                <div class="conteudo">
+                                    <div class="icone-check">
+                                        <span class="check"></span>
+                                    </div>
+                                    <img src="assets/icons/basketball-02.svg" alt="ícone de basquete">
+                                    <p class="card">Basquete</p>
+                                </div>
+                            </label>
 
-                        <div class="turno-card">
-                            <input type="radio" name="natacao">
-                            <img src="assets/icons/swimming.svg" alt="ícone de natação">
-                            <p class="card">Natação</p>
-                        </div>
+                            <label class="esporte-card">
+                                <input type="radio" name="natacao">
+                                <div class="conteudo">
+                                    <div class="icone-check">
+                                        <span class="check"></span>
+                                    </div>
+                                    <img src="assets/icons/swimming.svg" alt="ícone de natação">
+                                    <p class="card">Nataçãol</p>
+                                </div>
+                            </label>
 
-                        <div class="turno-card">
-                            <input type="radio" name="yoga">
-                            <img src="assets/icons/yoga-02.svg" alt="ícone de yoga">
-                            <p class="card">Yoga</p>
-                        </div>
+                            <label class="esporte-card">
+                                <input type="radio" name="yoga">
+                                <div class="conteudo">
+                                    <div class="icone-check">
+                                        <span class="check"></span>
+                                    </div>
+                                    <img src="assets/icons/yoga-02.svg" alt="ícone de yoga">
+                                    <p class="card">Yoga</p>
+                                </div>
+                            </label>
 
-                        <div class="turno-card">
-                            <input type="radio" name="volley">
-                            <img src="assets/icons/volleyball.svg" alt="ícone de volley">
-                            <p class="card">Volley</p>
-                        </div>
+                            <label class="esporte-card">
+                                <input type="radio" name="volleyball">
+                                <div class="conteudo">
+                                    <div class="icone-check">
+                                        <span class="check"></span>
+                                    </div>
+                                    <img src="assets/icons/volleyball.svg" alt="ícone de volleyball">
+                                    <p class="card">Volleyball</p>
+                                </div>
+                            </label>
 
-                        <div class="turno-card">
-                            <input type="radio" name="boxe">
-                            <img src="assets/icons/boxing-glove-01.svg" alt="ícone de boxe">
-                            <p class="card">Boxe</p>
+                            <label class="esporte-card">
+                                <input type="radio" name="boxe">
+                                <div class="conteudo">
+                                    <div class="icone-check">
+                                        <span class="check"></span>
+                                    </div>
+                                    <img src="assets/icons/boxing-glove-01.svg" alt="ícone de boxe">
+                                    <p class="card">Boxe</p>
+                                </div>
+                            </label>
+                            </div>
                         </div>
                     </div>
                 </div>
