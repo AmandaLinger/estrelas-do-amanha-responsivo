@@ -23,3 +23,17 @@
         width: 312px;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .logo{
+        img{
+            width: 380px;
+        }
+    }
+    .pana{
+        img{
+            height: 462px;
+            width: 624px;  
+        }
+    }
+}

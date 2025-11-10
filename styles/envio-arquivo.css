@@ -21,6 +21,10 @@
   text-align: center;
   color: var(--text-secondary);
   cursor: pointer;
+  img{
+    height: 48px;
+    width: 48px;
+  }
 }
 
 /* Faz o input ocupar toda a área, invisível */
