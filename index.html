@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Estrelas do amanhã</title>
     <link rel="stylesheet" href="styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="cabecalho">
@@ -18,61 +21,63 @@
 
     <div class="formulario-container">
         <div class="btn-voltar">
-            <img src="assets/icons/arrow-left-02.svg" alt="icone de seta voltar">
-            <div class="btn-voltar-text">Voltar</div>
+            <button class="voltar">
+                <img src="assets/icons/arrow-left-02.svg" alt="icone de seta voltar">
+                <div class="btn-voltar-text">Voltar</div>
+            </button>
         </div>
 
         <div class="title">
             <h1>Formulário de matrícula</h1>
-            <h2>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</h2>
+            <p class="subtitle">Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
         </div>
 
-        <form class="formulario">
+        <form class="formulario-container">
 
             <div class="informacoes">
                 <h3>Informações da criança</h3>
             </div>
 
-            <div class="dados-crianca">
-                <div class="nome-completo">
-                    <label for="nome-completo">Nome completo</label>
-                    <input type="text" placeholder="Nome da criança">
-                </div>
+                <div class="dados-crianca">
+                    <div class="nome-completo">
+                        <label for="nome-completo">Nome completo</label>
+                        <input type="text" placeholder="Nome da criança">
+                    </div>
 
-                <div class="data-nascimento">
-                    <label for="data-nascimento">Data de nascimento</label>
-                    <input type="date" placeholder="00/00/0000">
-                </div>
+                    <div class="data-nascimento">
+                        <label for="data-nascimento">Data de nascimento</label>
+                        <input type="date" placeholder="00/00/0000">
+                    </div>
 
-                <div class="sexo">
-                    <label for="sexo">Sexo</label>
-                        <input type="radio" name="sexo" value="feminino">
-                        Feminino
-                        </label>
-                        <label>
-                        <input type="radio" name="sexo" value="masculino">
-                        Masculino
-                        </label>
-                        <label>
-                        <input type="radio" name="sexo" value="outro">
-                        Outro
-                </div>
+                    <div class="sexo">
+                        <label for="sexo">Sexo</label>
+                            <label>
+                            <input type="radio" name="sexo" value="feminino">
+                            Feminino
+                            </label>
+                            <label>
+                            <input type="radio" name="sexo" value="masculino">
+                            Masculino
+                            </label>
+                            <label>
+                            <input type="radio" name="sexo" value="outro">
+                            Outro
+                    </div>
 
-                <div class="informacoes-medicas">
-                    <label for="informacoes-medicas">Informações médicas</label>
-                    <textarea name="informacoes-medicas" id="informacoes-medicas"></textarea>
-                </div> 
+                    <div class="informacoes-medicas">
+                        <label for="informacoes-medicas">Informações médicas</label>
+                        <textarea name="informacoes-medicas" id="informacoes-medicas"></textarea>
+                    </div> 
 
-                <div class="certidao">
-                    <label for="certidao-nascimento">Certidão de nascimento</label>
-                    <input type="file">
-
-                    <div class="enviar-arquivo">
-                        <img src="assets/icons/cloud-upload.svg" alt="Icone de upload">
-                        <h4>Clique aqui para selecionar arquivos</h4>
+                    <div class="certidao">
+                        <label for="certidao-nascimento">Certidão de nascimento</label>
+                        <div class="enviar-arquivo">
+                            <input type="file" id="certidao-nascimento" accept=".pdf,.jpg,.jpeg,.png">
+                            <img src="assets/icons/cloud-upload.svg" alt="Ícone de upload">
+                            <p>Clique aqui para<br>selecionar arquivos</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
             <div class="endereco-container">
 
