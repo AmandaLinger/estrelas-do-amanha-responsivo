@@ -1,0 +1,25 @@
+.cabecalho{
+    display: grid;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    background-color: var(--surface-secondary);
+}
+
+.logo{
+    display: flex;
+    margin-top: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pana{
+    margin-bottom: 32px;
+    img{
+        height: 231px;
+        width: 312px;
+    }
+}

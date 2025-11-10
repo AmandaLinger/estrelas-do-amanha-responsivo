@@ -1,0 +1,47 @@
+.terms{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+
+    margin:48px 0 48px 0;
+
+    font-size: 14px;
+    strong{
+        color: var(--stroke-highlight);
+    }
+}
+
+#terms{
+    height: 16px;
+    width: 16px;
+
+    background-color: transparent;
+    border: 1px solid var(--stroke-default);
+    border-radius: 4px;
+}
+
+.btn-rodape{
+    margin: 20px;
+    display: grid;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.salvar{
+    background-color: transparent;
+    border: 2px solid var(--stroke-highlight);
+    color: var(--stroke-highlight);
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-family: var(--ff-poppins);
+    font-weight: bold;
+}
+
+.matricular{
+    background-color: var(--stroke-highlight);
+    border: 2px solid var(--stroke-highlight);
+    color: var(--surface-primary);
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-family: var(--ff-poppins);
+    font-weight: bold;
+}

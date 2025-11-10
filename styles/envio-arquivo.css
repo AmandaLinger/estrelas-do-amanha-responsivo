@@ -1,0 +1,39 @@
+.enviar-arquivo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    img{
+        height: 48px;
+        width: 48px;
+    }
+}
+
+.certidao {
+  position: relative;
+}
+
+.enviar-arquivo {
+  position: relative;
+  border: 2px dashed var(--stroke-default);
+  border-radius: 8px;
+  padding: 32px;
+  text-align: center;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+/* Faz o input ocupar toda a área, invisível */
+.enviar-arquivo input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.enviar-arquivo:hover {
+  background-color: var(--surface-disabled);
+}

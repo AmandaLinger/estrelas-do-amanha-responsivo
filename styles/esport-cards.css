@@ -1,0 +1,78 @@
+.esporte-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.esporte-card input[type="radio"] {
+  display: none;
+}
+
+.esporte-card .conteudo {
+  position: relative;
+  width: 120px;
+  height: 100px;
+  border: 2px solid var(--stroke-default);
+  border-radius: 12px;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: var(--text-primary);
+}
+
+.esporte-card img {
+  width: 40px;
+  margin: 10px 0;
+}
+
+/* Círculo de check no canto */
+.icone-check {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--stroke-highlight);
+  background-image: url(../assets/icons/check.svg);
+  background-size: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  
+}
+
+.esporte-card input[type="radio"]:checked + .conteudo {
+  border-color: #ff6f3c;
+  box-shadow: 0 0 0 4px rgba(255, 111, 60, 0.2);
+}
+
+.esporte-card input[type="radio"]:checked + .conteudo .icone-check {
+  opacity: 1;
+}
+
+.esporte-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 16px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+    .esporte-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
