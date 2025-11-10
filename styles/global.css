@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.cabecalho{
+    display: grid;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    background-color: var(--surface-secondary);
+}
+
+.logo{
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pana{
+    margin-bottom: 32px;
+    img{
+        height: 231px;
+        width: 312px;
+    }
+}
