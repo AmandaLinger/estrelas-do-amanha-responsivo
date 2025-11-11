@@ -20,14 +20,17 @@
     color: var(--text-secondary);
     font-size: 14px;
 
-    inpu[type="text"]{
+    input{
         padding: 12px 16px;
         border-radius: 8px;
         border: 2px solid var(--stroke-default);
         box-shadow: 3px solid transparent;
     }
 
-    inpu[type="text"]:checked
+    input:checked{
+        border: 3px solid var(--text-highlight);
+        box-shadow: 0 0 0 4px var(--surface-secondary);
+    }
 
     input:hover{
         border: 3px solid var(--text-highlight);
@@ -44,6 +47,9 @@
     padding: 12px 16px ;
     border-radius: 8px;
     border: 2px solid var(--stroke-default);
+
+        border: 3px solid var(--text-highlight);
+        box-shadow: 0 0 0 4px var(--surface-secondary);
 }
 
 .informacoes-medicas textarea{
