@@ -12,7 +12,7 @@
 
 .esporte-card .conteudo {
   position: relative;
-  width: 120px;
+  width: 130px;
   height: 100px;
   border: 2px solid var(--stroke-default);
   border-radius: 12px;
@@ -52,8 +52,8 @@
 }
 
 .esporte-card input[type="radio"]:checked + .conteudo {
-  border-color: #ff6f3c;
-  box-shadow: 0 0 0 4px rgba(255, 111, 60, 0.2);
+    border: 3px solid var(--text-highlight);
+    box-shadow: 0 0 0 4px var(--surface-secondary);
 }
 
 .esporte-card input[type="radio"]:checked + .conteudo .icone-check {
@@ -62,23 +62,26 @@
 
 .esporte-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 140px 140px;
     gap: 16px;
     margin-top: 16px;
 
     align-items: center;
+    justify-content: center;
 }
 
 @media screen and (min-width: 1200px) {
     .esporte-container{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 150px 150px 150px;
         gap: 16px;
+        align-items: center;
+        justify-content: center;
     }
 
     .esporte-card .conteudo{
       height: 120px;
-      width: 190px;
+      width: 100px;
 
       display: flex;
       align-items: center;
