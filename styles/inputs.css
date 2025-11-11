@@ -20,11 +20,14 @@
     color: var(--text-secondary);
     font-size: 14px;
 
-    input{
+    inpu[type="text"]{
         padding: 12px 16px;
         border-radius: 8px;
         border: 2px solid var(--stroke-default);
+        box-shadow: 3px solid transparent;
     }
+
+    inpu[type="text"]:checked
 
     input:hover{
         border: 3px solid var(--text-highlight);
